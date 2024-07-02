@@ -1,0 +1,55 @@
+; Application: Amyuni Document Converter
+; Version    : 2.51
+; Copyright © AMYUNI Consultants 1999-2006
+; http://www.amyuni.com
+
+[Version]
+Signature="$Windows NT$"
+Provider=%AmyuniTech%
+Class=Printer
+ClassGUID={4d36e979-e325-11ce-bfc1-08002be10318}
+DriverVer=12/19/2006,2.51.0.0
+CatalogFile="atpdf251.cat"
+
+[Manufacturer]
+%AmyuniTech%=AmyuniDocumentConverter
+
+[AmyuniDocumentConverter]
+%Product%=Install_NT,LPTENUM\AMYUNI-AmyuniDocumentConverter251
+
+[Install_NT]
+CopyFiles=ACFPDF_XP
+DataSection=ACFPDF_DATA_XP
+DataFile=acfpdf.txt
+RegisterDlls=CDINTFDLL_REG
+
+[CDINTFDLL_REG]
+66000,,cdintf251.dll,1
+
+[ACFPDF_XP]
+acpdf251.dll,acfpdfu.dll
+acpdfui251.dll,acfpdfui.dll
+cdintf251.dll, cdintf.dll
+acfpdf.txt
+
+[ACFPDF_DATA_XP]
+DriverFile=acpdf251.dll
+ConfigFile=acpdfui251.dll
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[SourceDisksNames]
+1=%DiskName%,,0
+
+[SourceDisksFiles]
+acfpdfu.dll= 1
+acfpdfui.dll= 1
+acfpdf.txt= 1
+cdintf.dll=1
+
+[Strings]
+AmyuniTech="AMYUNI Technologies"
+Product="Amyuni Document Converter 2.51"
+DiskName="Amyuni Document Converter"
+

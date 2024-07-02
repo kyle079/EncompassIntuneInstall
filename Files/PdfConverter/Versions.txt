@@ -1,0 +1,392 @@
+******************************************************************
+PDF Converter versions 2.51-c to 2.51-d
+******************************************************************
+New features:
+
+Bug fixes:
+- Fixed issues with EnabledPre event not firing under 64-bit Windows
+- Fixed issue with some printer settings not having any effect under 64-bit systems, namely Postscript Simulation flag, margins, ...
+- Fixed issue with Metadata (Title, Author, Subject, ...) sometimes appearing differently in Acrobat Reader versus the full version of Acrobat
+- Fixed issue with 128-bit encryption flags not being set properly for advanced security settings (e.g. High Resolution printing)
+- Fixed issue with some HP printer drivers preventing the update for Amyuni printer drivers
+- Datestamp on PDF files modified to take time zones into consideration
+
+
+******************************************************************
+PDF Creator versions 2.01-c to 2.01-d
+******************************************************************
+Note:
+- 2.01-d is not a valid build and has been replaced by "2.01-d Build 2".
+
+New features:
+- Added the event EvaluateExpression to enable external applications to evaluate forumlas inside form fields.
+- Added the ability to print multiple pages to a single sheet of paper.
+
+Bug fixes:
+- Fixed issues decrypting certain password protected PDF files
+- Fixed issues with certain PDF files dramatically increasing in size after being modified
+
+
+******************************************************************
+PDF Converter versions 2.51 to 2.51-b
+******************************************************************
+Important changes:
+- Printer drivers for NT4 and IA64 processors removed from the default build. The last build for these drivers (v2.51) is located under http://www.amyuni.com/downloads/legacy_drivers.zip.
+- All DLLs are now renamed with the postfix 251, CDINTF250 becomes CDINTF251.
+- The files amyuni.inf and atpdf251.cat are needed to distribute the digitally signed versions of the printer driver. Removing these files will simply have the effect of installing an unsigned driver, i.e same as version 2.50.
+
+New features:
+- Printer driver has gone through Microsoft WHQL certifcation. No warnings and restore points are created when installing under XP/2003 32-bits.
+- Added the ability to create PDF/A compatible files. Check our tech. newsletters for details.
+- Ability to embed XMP metadata in PDF files. Check our tech. newsletters for details.
+- Improved output precision for defining the paper format (removed rounding errors).
+
+Bug fixes:
+- Fixed issues with the Downsampling option for image compression
+- Fixed issues converting JPEG images containing XMP tags.
+- Resolved issues with Word documents containing embedded Visio images.
+- Fixed various conversion issues when Postscript simulation is ON.
+- Fixed structured exception error on heavy load using certain font type.
+
+******************************************************************
+PDF Creator versions 2.50 to 2.50-b
+******************************************************************
+New features:
+- Scan documents directly from the scanner into PDF format.
+- Added support for filling backgrounds with hatches or more complex fills (bitmaps)
+
+Bug fixes:
+- Fixed problems with PDF documents that define large crop-boxes
+- Fixed problems importing PNG images directly into PDF Creator
+- Fixed issues with various files not showing properly in the Creator
+
+
+******************************************************************
+PDF Converter version 2.50g
+******************************************************************
+New features:
+
+Bug fixes:
+- Fixed "Illegal operation inside path" error when converting some documents.
+- Fixed "Pattern not found" error when converting some documents.
+
+******************************************************************
+PDF Creator version 2.0g
+******************************************************************
+New features:
+- New ScanToPDF feature in Amyuni PDF Editor Application.
+
+Improvements:
+- The PDF Creator application now asks the user for confirmation before becoming the default viewer for PDF files.
+- Improved Undo support for hyperlink actions.
+- When the user makes an interactive search and nothing is found, the control pops up a message saying nothing was found.
+
+Bug fixes:
+- Editable flag for form fields not being set properly in the PDF file
+- Crash when setting the document to design mode and then to run mode to populate a field programmatically.
+- When the user enters two backslashes in a text object, one out of two backslashes is removed.
+- The list of embedded fonts used to show letters and a plus sign before the font name.
+- Control used to crash in some situations when adding automatic hyperlinks.
+- Fixed a crash when user right-clicks a PDF file in Windows explorer and selects to print it.
+- Fixed the export-as dialog box not appearing under Windows 98.
+- Fixed: ExportToRTF causing overlapped text in some particular cases
+
+******************************************************************
+PDF Creator 2.0f-1 Patch
+******************************************************************
+Bug fixes:
+- Removed the dependency on GDIPLUS.DLL. This DLL should be optional and loaded dynamically if found on the system.
+
+******************************************************************
+PDF Converter version 2.50e to 2.50f
+******************************************************************
+New features:
+- Added support for color profiles and forcing all output to CMYK
+- Document Converter printer driver is now supported under Windows XP/2003 64-bit editions
+
+Bug fixes:
+- Printer driver crashing with complex documents containing vector graphics
+- Printer driver crashing with complex documents containing asiatic fonts
+- Fixed regression problem with bitmap fonts not being converted to PDF
+- Fixed regression problem with PDF files with multi-language support not appearing properly with Acrobat 4 and 5
+- Fixed issue with upside-down text not being properly spaced in the resulting PDF file
+
+******************************************************************
+PDF Creator version 2.0e to 2.0f
+******************************************************************
+Improvements:
+- Added support for Type 3 or vector fonts
+
+Bug fixes:
+- PDF Converter files containing embedded Type1 fonts not viewable in PDF Creator
+- AutoHyperlinks and AutoBookmark functions improved
+- Fixed issues with a number of customer supplied PDF files
+- Fixed problems with ScaleToPrinter property not properly scaling documents
+
+******************************************************************
+PDF Converter version 2.50d
+******************************************************************
+Bug fixes:
+- PS Interpreter crashing with some Visio documents
+- Some PDF Files not opening correctly with older versions of Acrobat
+- Font embedding not working properly with "Voyager" font (other fonts might be affected)
+- Reprinting PDF files containing transparencies to a Posctscript printer producing invalid .ps files
+- Fixed an issue with 4-bit grayscale images.
+- Fixed issue with Acrobat 7 complaining about invalid drawing instructions. Empty clip regions not supported by Acrobat 7.
+ 
+******************************************************************
+PDF Creator version 2.0d
+******************************************************************
+Bug fixes:
+- Hitting Enter on single-line edit-fields showing invalid characters
+- Reading some encrypted PDF documents showing blank pages
+- Ability to set the hyperlink destination to something other than a simple URL
+- Conversion of hyperlinks to HTML files
+ 
+
+******************************************************************
+PDF Creator version 2.0c
+******************************************************************
+Improvements:
+- Added support for GDI+ for improved rendering of PDF files
+- GDI+ is automatically detected and used if installed on the target system
+
+Bug fixes:
+- Fixed command IDs acCommandToolDocumentProperties and acCommandToolPageProperties that were not functionning
+- Fixed problem with printers that do not support RAW spool format
+- Added the ability to print blank pages when using the PrintSequence array by inserting the value -1
+
+******************************************************************
+PDF Converter version 2.50b
+******************************************************************
+Improvements:
+- Added Chinese language support for Developer version only
+- Completed translations for French, German, Italian, Spanish and Japanese
+
+Bug fixes:
+- Fixed problems with incomplete documents printed from Actuate viewer
+- Improved printing of dahsed lines from MS Office applications
+- Fixed problem printing JPeg images from MS Word 2003
+- Fixed problems printing from SwiftView PCL viewer
+
+******************************************************************
+PDF Creator version 2.0b
+******************************************************************
+Bug fixes:
+- Fixed cursor over hyperlinks not appearing
+- Fixed problem with PNG images not being aligned
+- Fixed crash occuring when saving/opening a document containing field object under PowerBuilder
+- Fixed problems moving between field objects using Tab keys
+- Fixed loading certain hyperlink types created using Acrobat
+- Fixed problems viewing indexed PNG images
+- Fixed problem with printing even if Print dialog box is cancelled
+
+
+******************************************************************
+PDF Converter version 2.50a
+******************************************************************
+Improvements:
+- Added support for embedding OpenType/CFF fonts
+
+Bug fixes:
+- Fixed problem with PNG images not always printing properly from MS Office
+- Fixed problem with bullet characters in Verdana font not converting properly to PDF
+
+******************************************************************
+PDF Creator version 2.0a
+******************************************************************
+Bug fixes:
+- Transparent images printed with an opaque background
+- Form fields showing invalid data when PDF document is encrypted
+- Improved support for PDF files generated by Quark Express
+
+******************************************************************
+PDF Converter version 2.50 - PDF Creator version 2.0a
+******************************************************************
+- Major releases, check documentation for new features
+
+
+******************************************************************
+Document Converter Version 2.10i-7 to 2.10i-8
+PDF-HTML-RTF-EXCEL-JPEG
+******************************************************************
+
+Bug fixes:
+- Fixed crash converting certain images to PDF
+- Fixed problem with printer security tab not appearing under Windows 2000 SP4
+- Generated file name made available after the print job is finished
+- Fixed date and time format for emails sent through SMTP
+- Windows NT/2000/XP: Filling a background using a NULL brush produces unexpected results
+
+
+******************************************************************
+Document Converter Version 2.10i to 2.10i-6
+PDF-HTML-RTF-EXCEL-JPEG
+******************************************************************
+Improvements:
+- Reduced file sizes for PDF files with embedded fonts
+- Modified the file structure to make it compatible with Sophos anti-virus
+
+Bug fixes:
+- Fixed problems with applications that send an invalid DEVMODE structure to the printer
+- Fixed backward compatibility with Acrobat 5.0 for documents containing transparent images
+- Fixed problems with Thai characters
+- Fixed reported size of CCITT Fax compressed images in PDF files
+- Improved PDF Merge speed and compatbility with external PDF files
+
+******************************************************************
+PDF Creator Version 1.50d-i
+******************************************************************
+Improvements:
+- Improved loading speed for large PDF documents
+- Add TIFF export module (requires separate licensing)
+- Improved PDF Merge speed and compatbility with external PDF files
+
+Bug fixes (partial list):
+- Very thin lines (hairlines) not printing on certain printer models
+- Fixed problems with rotated and landscape documents
+- Fixed problems saving documents containing transparent images
+
+******************************************************************
+Document Converter Version 2.10g-h
+PDF-HTML-RTF-EXCEL-JPEG
+******************************************************************
+
+Bug fixes:
+- Printer driver crashing with Isonorm font
+- Printing PDF files to Postscript producing blank characters with certain fonts
+- Blurred black and white images
+- Excel Export producing invalid files on very large files
+- Export to JPeg/RTF/HTML not following the Rotation parameter of PDF files
+ 
+ 
+******************************************************************
+PDF Creator Version 1.50c
+******************************************************************
+Bug fixes:
+- Images of height or width of 0 producing invalid PDF files
+
+Improvements:
+- Ability to open a background PDF file to serve as a template or letterhead to main document
+- Added events for mouse clicks and movement
+- Added an event when the user creates an object on a page 
+
+******************************************************************
+Document Converter Version 2.10f
+PDF-HTML-RTF-EXCEL-JPEG
+******************************************************************
+Improvements:
+- Support for TrueType collections (.ttc files that contain more than one TrueType font such as MS Ghotic)
+- Improved export to RTF/HTML/Excel/JPeg for Unicode documents
+
+Bug fixes:
+- When exporting to PDF, the following combination produces an invalid image: JPeg + Grayscale images + Encryption
+- Memory leaks under Windows 9x causing a crash after multiple printouts
+- Install -s was not working from InstallShield or MSI
+- Hyperlink position incorrect for images and vector graphics when using the SetHyperlink function
+- Univers font not appearing under NT4
+- 8 bit color images not converted to Grayscale even with Grayscale option activated
+- Printer driver crashing with specific vector graphic operations
+- Improved Excel Export to fix cell editing, crashes when exporting certain documents, blank Excel files
+- Export to JPeg producing repeated bands across the page
+ 
+Other:
+Added the following functions to CDINTF:
+- Document.SetBookmarkXY    to specify the bookmark position on a page
+- Document.Split    to split a document into one PDF per page
+- Document.SplitXY    to split a document depending on the text at a specified location
+- CDintfEx.Encryption    to set the encryption level in the user interface (0 = None, 1 = 40-bit, 2 =128 bit)
+- CDintf.InlineImageSize    to set the max inline image size in the U.I.
+ 
+******************************************************************
+PDF Creator Version 1.50b
+******************************************************************
+- Crash caused by < and > characters
+- Support for page rotations of 180 and 270 degrees
+- Complex polygons spilling outside of the page
+- Editing problems fixed: moving with the Tab key, hitting Enter multiple times, Fields resizing
+- Improved support for a variety of PDF files
+- Merge and Append crashing or failing on a some documents
+- CCITT-Fax compressed images displaying and printing with a black band to the left
+- Page objects not being loaded unless the control is visible on a form.
+
+******************************************************************
+PDF Creator Version 1.50a
+******************************************************************
+- Intermediate release delivered to specific customers only
+
+******************************************************************
+Version 2.10e
+******************************************************************
+Improvements:
+- Downsampling of high resolution images to match output resolution
+- JPeg compression of 16 bit images, previously done on 24 and 32 bit images only
+- Improved performance when appending PDF files
+- Added an option to save the settings in the HKEY_CURRENT_USER registry as opposed to HKEY_CURRENT_CONFIG (specific activation code needed for this option)
+
+Bug fixes:
+- Added access from CDINTF to the Simulate Postscript option
+- Under Windows 9x, text width not always computed correctly
+- Fixed problem with 1 Bit transparent bitmaps generating invalid files
+- JPeg export: black pages generated under Windows 9x
+- HTML export: removed absolute paths from exported image filenames
+- RTF export: fixed problem with curves being exported as polygons
+- Fixed problem opening Linearized documents with Acrobat Reader 6
+
+Other:
+- Modified the Unicode translation tables to satisfy the requirements of some search/indexing engines
+
+
+******************************************************************
+Version 2.10d
+******************************************************************
+Improvements:
+- Install through Install.exe or PDFDriverInit now works if no LPT1: port is available (attaches to any other available port)
+- Added an option to automatically print the output document in addition to saving it to file.
+- Create .NET specific controls in CDIntfNet.DLL that contain most common functions and events of CDIntf
+
+Bug fixes:
+- Lines drawn with NULL_PEN attribute appearing in the PDF file under 2000/XP.
+- With some colored bitmaps, black pixels were being replaced with white pixels
+- Fixed size and spacing of rotated text
+- Made the search for duplicate images in document optional as this option significantly reduces printing performance.
+- Fixed problem with insufficient image data with some CCITT compressed images.
+- Fixed problem with Excel export generating empty documents with certain configurations.
+
+******************************************************************
+Version 2.10c
+******************************************************************
+Improvements:
+- Added the Excel export module to the Document Converter Suite
+- Improved RTF/HTML/JPeg exports
+- Added the EncryptPDFDocument128 and PrintPDFDocument to the DLL interface
+- Added support for Unicode characters in the RTF and HTML exports
+
+Bug fixes:
+- Windows 9x: 32 bit bitmaps generating invalid results
+- Windows 9x: programmatically setting font embedding options not working properly
+- Windows 9x: default optimization levels for RTF/HTML/JPEG exports not being set properly
+- Fixed problems with printer getting disabled when calling BatchConvert
+- Encryption done while the document is generated produced invalid results
+- Merging and Encrypting documents simultaneously produced non-encrypted documents
+- Fixed image substitution problems due to optimizations
+- Windows NT/2000/XP: Fixed problem with some applications incorrectly setting the printer output port (LPT1 instead of LPT1:)
+- Windows NT/2000/XP: Fixed problem printing symbol characters from MS Excel
+
+******************************************************************
+Version 2.10b
+******************************************************************
+Improvements:
+
+Bug fixes:
+- Fixed problem initialising printer driver under NT4
+- Fixed problem with invalid PDF files being generated if original document contained vertical text
+- Fixed problem with "Less Image Data Than Expected" error occuring with some images
+
+
+******************************************************************
+Version 2.10a
+******************************************************************
+- First official release for version 2.1
+
+

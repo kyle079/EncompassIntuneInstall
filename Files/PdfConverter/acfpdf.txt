@@ -1,0 +1,5 @@
+'
+' Amyuni PDF Converter
+' Copyright AMYUNI Consultants - Amyuni Technologies
+' http://www.amyuni.com
+'
